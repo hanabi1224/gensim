@@ -10,6 +10,7 @@ Changes
   - up to 300% speed up when training on very short documents (~tweets)
 * Word2vec allows non-strict unicode error handling (ignore or replace) (Gordon Mohr, #466)
 * Fix `DocvecsArray.index_to_doctag` so `most_similar()` returns string doctags (Gordon Mohr, #560) 
+* Doc2Vec `model.docvecs[key]` now raises KeyError for unknown keys (Gordon Mohr, #520)
 * On-demand loading of the `pattern` library in utils.lemmatize (Jan Zikes, #461)
   - `utils.HAS_PATTERN` flag moved to `utils.has_pattern()`
 * Threadsafe Word2Vec/Doc2Vec finish-check to avoid hang/unending Word2Vec/Doc2Vec training (Gordon Mohr, #571)
